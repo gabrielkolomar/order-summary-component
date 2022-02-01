@@ -1,0 +1,140 @@
+:root {
+  --pale-blue: #e0e8ff;
+  --bright-blue: #3829e0;
+  --very-pale-blue: #f5f7ff;
+  --desatured-blue: #7280a7;
+  --dark-blue: #1f2f56;
+  --white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--pale-blue);
+  background-image: url(./assets/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 450px;
+  background: var(--white);
+  border-radius: 20px;
+}
+
+.container img {
+  border-radius: 20px 20px 0 0;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.information h1 {
+  color: var(--dark-blue);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.information p {
+  color: var(--desatured-blue);
+  text-align: center;
+  line-height: 25px;
+}
+
+.container .plan {
+  background: var(--very-pale-blue);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.container .plan-information {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 20px;
+}
+
+.container .plan-information span {
+  color: var(--desatured-blue);
+  font-size: 14px;
+}
+
+.container .plan-information strong {
+  color: var(--dark-blue);
+}
+
+.container .plan a {
+  color: var(--bright-blue);
+}
+
+.information .payment-button {
+  border-radius: 10px;
+  background: var(--bright-blue);
+  width: 100%;
+  padding: 12px;
+  color: var(--white);
+  font-size: 14px;
+  border: none;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.information .cancel-button {
+  background: transparent;
+  width: 100%;
+  color: var(--desatured-blue);
+  font-size: 14px;
+  border: none;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.plan a:hover {
+  color: rgb(255, 83, 83);
+  transition: 0.5s;
+}
+
+.information .payment-button:hover {
+  color: black;
+  transition: 0.4s;
+}
+
+.information .payment-button:active {
+  position: relative;
+  top: 3px;
+}
+
+.information .cancel-button:hover {
+  background: #cbced4;
+  color: rgb(36, 35, 35);
+  transition: 0.5s;
+}
+
+.information .cancel-button:active {
+  position: relative;
+  top: 3px;
+}
